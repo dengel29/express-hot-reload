@@ -1,0 +1,23 @@
+{
+  "name": "express-hot-reload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build-style && gulp build",
+    "build-style": "node-sass style -o public/css",
+    "style": "node-sass style -o public/css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "concurrently": "^6.2.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
