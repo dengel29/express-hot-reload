@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build-style && gulp build",
+    "start": "npm run build-style && concurrently 'gulp build' 'npm:style'",
     "build-style": "node-sass style -o public/css",
     "style": "node-sass style -o public/css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
